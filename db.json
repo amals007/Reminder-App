@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "reminderName": "gym",
+      "date": "12/07/2022",
+      "time": "6.30"
+    },
+    {
+      "id": 2,
+      "reminderName": "buy groceries",
+      "date": "13/09/2022",
+      "time": "9.30"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullName": "rahul",
+      "email": "rahul@gmail.com",
+      "password": "rahul",
+      "mobile": 49494949,
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

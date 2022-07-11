@@ -1,0 +1,10 @@
+.navbar{
+    background: linear-gradient(to top, #ced0ce, #d6d7d7);
+}
+.modal-content{
+   background: linear-gradient(to top, #ced0ce, #d6d7d7);
+}
+
+.delete-button{
+    margin-left: 10px;
+}
