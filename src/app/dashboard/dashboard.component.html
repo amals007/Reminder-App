@@ -9,32 +9,40 @@
     </div>
   </nav>
   
-  <table class="table mt-3 text-center">
-    <thead>
-      <tr>
-        <th scope="col">Reminder ID</th>
-        <th scope="col">Reminder Name</th>
-        <th scope="col">Date</th>
-        <th scope="col">Time</th>
-       
-        <th scope="col">Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let row of reminderData">
-       <td>{{row.id}}</td>
-       <td>{{row.reminderName}}</td>
-       <td>{{row.date}}</td>
-       <td>{{row.time}}</td>
-      
-        <td>
-          <button (click)="onEdit(row)"  class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
-          <button (click)="deleteReminder(row)"  class="btn btn-danger delete-button">Delete</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
+
+ <div class="row">
+  <div class="col-2"></div>
+   <div class="col-8">
+      <table class="table mt-3 text-center">
+        <thead>
+          
+          <tr>
+            <th scope="col">Reminder ID</th>
+            <th scope="col">Reminder Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+           
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of reminderData">
+           <td>{{row.id}}</td>
+           <td>{{row.reminderName}}</td>
+           <td>{{row.date}}</td>
+           <td>{{row.time}}</td>
+          
+            <td>
+              <button (click)="onEdit(row)"  class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+              <button (click)="deleteReminder(row)"  class="btn btn-danger delete-button">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+   </div>
+   <div class="col-2"></div>
+    
+ </div>
   
   
   <!-- Modal -->
@@ -54,11 +62,11 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Date</label>
-              <input type="text" formControlName="date" class="form-control" id="exampleInputPassword1">
+              <input type="date" formControlName="date" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Time</label>
-              <input type="text" formControlName="time" class="form-control" id="exampleInputPassword1">
+              <input type="time" formControlName="time" class="form-control" id="exampleInputPassword1">
             </div>
         
            

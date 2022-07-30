@@ -1,18 +1,5 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "reminderName": "gym",
-      "date": "12/07/2022",
-      "time": "6.30"
-    },
-    {
-      "id": 2,
-      "reminderName": "buy groceries",
-      "date": "13/09/2022",
-      "time": "9.30"
-    }
-  ],
+  "posts": [],
   "signupUsers": [
     {
       "fullName": "rahul",
@@ -20,6 +7,20 @@
       "password": "rahul",
       "mobile": 49494949,
       "id": 2
+    },
+    {
+      "fullName": "kohli",
+      "email": "kohli@gmail.com",
+      "password": "kohli",
+      "mobile": 49494949,
+      "id": 3
+    },
+    {
+      "fullName": "virat",
+      "email": "virat@gmail.com",
+      "password": "virat",
+      "mobile": 4649499494,
+      "id": 4
     }
   ],
   "profile": {
